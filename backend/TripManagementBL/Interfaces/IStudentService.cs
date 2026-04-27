@@ -9,7 +9,7 @@ namespace TripManagementBL.Interfaces
 {
     public interface IStudentService
     {
-        Task CreateStudentAsync(CreateStudentDto dto);
+        Task<StudentDto> CreateStudentAsync(CreateStudentDto dto);
         Task<StudentDto> GetStudentByStudentIdAsync(string studentId);
         Task<List<StudentDto>> GetAllStudentsAsync();
     }

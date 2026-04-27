@@ -19,7 +19,7 @@ namespace TripManagementBL.Services
             _context = context;
         }
 
-        public async Task CreateStudentAsync(CreateStudentDto dto)
+        public async Task<StudentDto> CreateStudentAsync(CreateStudentDto dto)
         {
             await ValidateStudentAsync(dto);
 
@@ -33,8 +33,15 @@ namespace TripManagementBL.Services
 
             _context.Students.Add(student);
             await _context.SaveChangesAsync();
-        }
 
+            return new StudentDto
+            {
+                Id = student.Id,
+                StudentId = student.StudentId,
+                FullName = student.FirstName + " " + student.LastName,
+                ClassId = student.ClassId
+            };
+        }
         public async Task<StudentDto> GetStudentByStudentIdAsync(string studentId)
         {
             if (string.IsNullOrWhiteSpace(studentId))
