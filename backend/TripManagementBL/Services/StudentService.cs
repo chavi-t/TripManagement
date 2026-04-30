@@ -14,6 +14,7 @@ namespace TripManagementBL.Services
     {
         private readonly TripManagementDbContext _context;
 
+
         public StudentService(TripManagementDbContext context)
         {
             _context = context;
@@ -38,6 +39,8 @@ namespace TripManagementBL.Services
             {
                 Id = student.Id,
                 StudentId = student.StudentId,
+                FirstName = student.FirstName,
+                LastName = student.LastName,
                 FullName = student.FirstName + " " + student.LastName,
                 ClassId = student.ClassId
             };
@@ -57,6 +60,8 @@ namespace TripManagementBL.Services
             {
                 Id = student.Id,
                 StudentId = student.StudentId,
+                FirstName = student.FirstName,
+                LastName = student.LastName,
                 FullName = student.FirstName + " " + student.LastName,
                 ClassId = student.ClassId
             };
@@ -69,6 +74,8 @@ namespace TripManagementBL.Services
                 {
                     Id = s.Id,
                     StudentId = s.StudentId,
+                    FirstName = s.FirstName,
+                    LastName = s.LastName,
                     FullName = s.FirstName + " " + s.LastName,
                     ClassId = s.ClassId
                 })

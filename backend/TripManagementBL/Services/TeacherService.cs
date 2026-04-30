@@ -37,6 +37,8 @@ namespace TripManagementBL.Services
             return new TeacherDto
             {
                 Id = teacher.Id,
+                FirstName = teacher.FirstName,
+                LastName = teacher.LastName,
                 FullName = teacher.FirstName + " " + teacher.LastName,
                 ClassId = teacher.ClassId
             };
@@ -57,6 +59,8 @@ namespace TripManagementBL.Services
             {
                 Id = teacher.Id,
                 TeacherId = teacher.TeacherId,
+                FirstName = teacher.FirstName,
+                LastName = teacher.LastName,
                 FullName = teacher.FirstName + " " + teacher.LastName,
                 ClassId = teacher.ClassId
             };
@@ -68,6 +72,8 @@ namespace TripManagementBL.Services
                 {
                     Id = t.Id,
                     TeacherId = t.TeacherId,
+                    FirstName = t.FirstName,
+                    LastName = t.LastName,
                     FullName = t.FirstName + " " + t.LastName,
                     ClassId = t.ClassId
                 })
@@ -92,6 +98,8 @@ namespace TripManagementBL.Services
                 {
                     Id = s.Id,
                     StudentId = s.StudentId,
+                    FirstName = s.FirstName,
+                    LastName = s.LastName,
                     FullName = s.FirstName + " " + s.LastName,
                     ClassId = s.ClassId
                 })

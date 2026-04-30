@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TripManagementBL.Interfaces;
+using Microsoft.AspNetCore.SignalR;
+using Microsoft.EntityFrameworkCore;
+using TripManagementAPI.Hubs;
 using TripManagementBL.Dtos;
+using TripManagementBL.Interfaces;
+
 
 namespace TripManagementAPI.Controllers
 {
@@ -9,10 +13,15 @@ namespace TripManagementAPI.Controllers
     public class StudentController : ControllerBase
     {
         private readonly IStudentService _studentService;
+        private readonly IHubContext<LocationHub> _hubContext;
 
-        public StudentController(IStudentService studentService)
+       
+
+        public StudentController(IStudentService studentService, IHubContext<LocationHub> hubContext)
         {
             _studentService = studentService;
+            _hubContext = hubContext;
+
         }
 
         [HttpPost]
@@ -21,6 +30,11 @@ namespace TripManagementAPI.Controllers
             try
             {
                 var result = await _studentService.CreateStudentAsync(dto);
+                
+
+                    await _hubContext.Clients.All.SendAsync("NewStudent", result.StudentId);
+
+                  
 
                 return Ok(result);
 

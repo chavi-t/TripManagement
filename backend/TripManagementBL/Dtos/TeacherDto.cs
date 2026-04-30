@@ -10,6 +10,8 @@ namespace TripManagementBL.Dtos
     {
         public int Id { get; set; }
         public string TeacherId { get; set; } = string.Empty;
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
         public string FullName { get; set; } = string.Empty;
         public int ClassId { get; set; }
     }

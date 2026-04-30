@@ -1,7 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using TripManagementDAL.Models;
+using TripManagementAPI.Hubs;
+using TripManagementBL.Features.LocationTracking.Interfaces;
+using TripManagementBL.Features.LocationTracking.Services;
 using TripManagementBL.Interfaces;
 using TripManagementBL.Services;
+using TripManagementDAL.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +15,8 @@ builder.Services.AddCors(options =>
         {
             policy.WithOrigins("http://localhost:3000", "https://localhost:3000")
                   .AllowAnyHeader()
-                  .AllowAnyMethod();
+                  .AllowAnyMethod()
+                  .AllowCredentials();
         });
 });
 
@@ -22,6 +26,10 @@ builder.Services.AddDbContext<TripManagementDbContext>(options =>
 builder.Services.AddScoped<ITeacherService, TeacherService>();
 builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddScoped<IClassService, ClassService>();
+builder.Services.AddScoped<ICoordinateConverter, CoordinateConverter>();
+builder.Services.AddScoped<ILocationService, LocationService>();
+
+builder.Services.AddSignalR();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -42,5 +50,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapHub<LocationHub>("/locationHub");
 
 app.Run();
