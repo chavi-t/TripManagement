@@ -42,7 +42,6 @@ function Navbar() {
 
       <div className="profile" onClick={() => setOpen(!open)}>
         <div className="avatar">{firstLetter}</div>
-
         <div className="profile-name">
           {teacher ? teacher.firstName : ""}
         </div>

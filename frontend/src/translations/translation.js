@@ -7,7 +7,8 @@ export const t = {
   welcome: "ברוכים הבאים למערכת טיול שנתי",
   school: 'בית ספר "בנות משה"',
   register: "הרשמה",
-  login: "כניסת מורה",
+  loginTeacher: "כניסת מורה",
+  StudentMap: "צפייה במפת תלמידות",
   //register page
   student: "תלמידה",
   teacher: "מורה",

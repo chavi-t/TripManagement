@@ -20,8 +20,12 @@ function Home() {
           />
 
           <Button
-            text={t.login}
+            text={t.loginTeacher}
             onClick={() => navigate("/login")}
+          />
+           <Button
+            text={t.StudentMap}
+            onClick={() => navigate("/tracking")}
           />
         </div>
       </div>

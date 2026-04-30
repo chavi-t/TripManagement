@@ -10,13 +10,13 @@ function SearchBar({ value, onChange, onSearch, placeholder, loading }) {
         onChange={onChange}
         placeholder={placeholder}
       />
-
       <Button
         text={loading ? "..." : "🔍"}
         onClick={onSearch}
       />
+</div>
 
-    </div>
+  
   );
 }
 

@@ -5,13 +5,11 @@
   border-radius: 12px;
   cursor: pointer;
 
-  /* הכי חשוב */
   color: #ffffff;
 
   transition: all 0.3s ease;
 }
 
-/* ראשי */
 .btn.primary {
   background: linear-gradient(135deg, #3498db, #2c5d8f);
   box-shadow: 0 6px 15px rgba(52, 152, 219, 0.35);
@@ -22,10 +20,9 @@
   box-shadow: 0 10px 20px rgba(52, 152, 219, 0.45);
 }
 
-/* משני */
 .btn.secondary {
   background: #ffffff;
-  color: #2c3e50; /* 🔥 זה התיקון החשוב */
+  color: #f7e7b6; 
   border: 1px solid #dcdcdc;
 }
 
