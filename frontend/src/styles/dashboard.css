@@ -1,0 +1,9 @@
+
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #cde7f0, #f7e7b6);
+}
+
+.dashboard-content {
+  padding: 30px;
+}

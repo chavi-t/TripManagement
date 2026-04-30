@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripManagementBL", "backend
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripManagementAPI", "backend\AnnualTripSystem\TripManagementAPI.csproj", "{64B9899B-3738-D8CF-4257-20D5C36570D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationSimulator", "LocationSimulator\LocationSimulator.csproj", "{F96CFAAC-12D6-47AA-AF00-A1F350360D6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{64B9899B-3738-D8CF-4257-20D5C36570D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64B9899B-3738-D8CF-4257-20D5C36570D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64B9899B-3738-D8CF-4257-20D5C36570D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F96CFAAC-12D6-47AA-AF00-A1F350360D6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96CFAAC-12D6-47AA-AF00-A1F350360D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96CFAAC-12D6-47AA-AF00-A1F350360D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96CFAAC-12D6-47AA-AF00-A1F350360D6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

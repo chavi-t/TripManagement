@@ -1,0 +1,33 @@
+.map-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+.leaflet-tooltip {
+  background: rgb(232, 187, 187) !important;
+    transition: all 0.2s ease;
+      cursor: default !important;
+
+
+}
+.leaflet-marker-icon {
+  cursor: default !important;
+}
+
+.student-label {
+  background-color: #1e293b !important;
+  color: white !important;
+  border-radius: 8px !important;
+  padding: 6px 10px !important;
+  font-size: 12px;
+  font-weight: 500;
+  border: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  text-align: center;      
+  white-space: nowrap;     
+}
+

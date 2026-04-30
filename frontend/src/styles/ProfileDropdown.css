@@ -1,0 +1,24 @@
+.dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0;
+
+  background: white;
+  border-radius: 10px;
+  padding: 10px 0;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  width: 160px;
+
+  z-index: 100;
+}
+
+.dropdown div {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dropdown div:hover {
+  background: #f1f1f1;
+}
