@@ -110,6 +110,34 @@ npm start
 
 ---
 
+## API Endpoint
+
+The backend API runs at:
+https://localhost:7115
+
+---
+
+## How to Use
+
+1. Open the application (frontend)
+2. From the home screen choose:
+   - Student Registration
+   - Teacher Login
+   - View Map
+
+3. Register a new student by filling the form
+
+4. Login as a teacher using an ID number
+
+5. After login:
+   - View students list
+   - View teachers list
+   - Search for specific users
+
+6. Open the map screen to see real-time student locations
+
+---
+
 ## Authentication
 
 * Teachers authenticate using their ID number
@@ -127,7 +155,7 @@ npm start
 * Navigation to teacher login
 * Access to the student map
 
-`images/home.png`
+![Home Screen](images/home.png)
 
 ---
 
@@ -136,7 +164,7 @@ npm start
 * Form submission with validation
 * Success message upon completion
 
-`images/register.png`
+![Register Screen](images/register.png)
 
 ---
 
@@ -144,7 +172,7 @@ npm start
 
 * Login using ID number
 
-`images/login.png`
+![Login Screen](images/login.png)
 
 ---
 
@@ -156,7 +184,7 @@ Includes:
 * List of teachers
 * Search functionality within tables
 
-`images/dashboard.png`
+![Dashboard](images/dashboard.png)
 
 ---
 
@@ -175,7 +203,7 @@ Includes:
 * Locations update continuously in real time
 * Implemented using Leaflet and SignalR
 
-`images/map.png`
+![Map](images/map.png)
 
 ---
 
