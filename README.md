@@ -115,8 +115,10 @@ npm start
 Create a `.env` file inside the `frontend` folder and add the following:
 
 
+```
 PORT=3000
 REACT_APP_API_URL=https://localhost:7115/api
+```
 
 
 These variables are required for the frontend to communicate with the backend API.
